@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>this is a title</title>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body style="background-color: beige;">
+        <p id="title">Black Bear's Home</p>
+        
+        <table border="4px">
+            <caption>我的基本相片及連結(點即可前往)</caption>
+            <tr>
+                <td>
+                    <a href="https://www.facebook.com/wailwin.wang/" target="_blank">
+                        <img src="myphoto01.jpg">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.facebook.com/NCUcafeclub/" target="_blank">
+                        <img src="myphoto02.jpg">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.youtube.com/channel/UCD-Z5cE3P3HqU3y8ICN4uRw" target="_blank">
+                        <img src="myphoto03.jpg">
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="remarks">
+                        <h1>黑熊跟黑熊</h1>
+                    </div>
+                </td>
+                <td>
+                    <div class="remarks">
+                        <h1>好玩的咖啡社~</h1>
+                    </div>
+                </td>
+                <td>
+                    <div class="remarks">
+                        <h1>辦活動的日常搞事:)</h1>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+
+        <p id="title">我的基本資料</p>
+
+        <div>
+            <div>
+            <table >
+                <tr>
+                    <td>
+                        <div id="one">
+                            <p id="one-print">我的本名：王偉倫</p>
+                            <p id="one-print">我的綽號</p>
+                            <ul>
+                                <li id="one-print">黑熊</li>
+                                <li id="one-print">柴犬</li>
+                                <li id="one-print">因為看起來很老所以被說研究生：)</li>
+                            </ul>
+                               
+                        </div>
+                    </td>
+                    <td>
+                        <div id="two">
+                            <p id="one-print">我的興趣：畫畫、舞蹈</p>
+                            <p id="one-print">我的專長</p>
+                            <ol>
+                                <li id="one-print">python LINE專案</li>
+                                <li id="one-print">一點點的AWS的AI建模</li>
+                                <li id="one-print">大氣學、以及一些地質學的東西(？</li>
+                            </ol>
+
+                            
+                        </div>
+                    </td>
+
+                    <td>
+                        <div id="three">
+                            <p id="one-print">喜歡的吃的：冰淇淋：)</p>
+                            <p id="one-print">喜歡的消遣</p>
+                            <ol>
+                                <li id="one-print">翻一些各式各樣的Youtube影片</li>
+                                <li id="one-print">跟一群很過動但很好笑朋友打球</li>
+                                <li id="one-print">睡覺讚Zzzzzzzzzzzzzzzzzzzzzzzzzz</li>
+                            </ol>
+
+
+                        </div>
+                    </td>
+                </tr>     
+            </table>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div>
+            <p id="title">最近有在追蹤的貼文：)</p>
+            <em>真的不要點開，會出事：)</em>
+            <strong>不過要點開我也是非常樂意：)</strong>
+
+            <table>
+                <tr>
+                    <td>
+                        <a href="https://www.instagram.com/p/CcozWqOJdEW/" target="_blank"><img src="IG01.jpg"></a> <!--圖片來源：https://www.instagram.com/p/CcozWqOJdEW/-->
+                    </td>
+                    <td>
+                        <a href="https://www.instagram.com/p/CcozUKQpfF5/" target="_blank"><img src="IG02.jpg"></a><!--圖片來源：https://www.instagram.com/p/CcozUKQpfF5/-->
+                    </td>
+                    <td>
+                        <a href="https://www.instagram.com/p/CcozStnJHdX/" target="_blank"><img src="IG03.jpg"></a><!--圖片來源：https://www.instagram.com/p/CcozStnJHdX/-->
+                    </td>
+                </tr>     
+            </table>
+        </div>
+
+        <hr>
+            
+        <div>
+            <p id="title">我的環島計畫募款</p>
+            <label>請輸入大大的名字</label>
+            <input id="name" type="text" placeholder="ex.王曉明" value=""/>
+            <br>
+            <label>請輸入大大的捐款金額</label>
+            <input id="money" type="text" placeholder="ex.870" value=""/>
+            <br><br>
+            <button id="btn" type="button">submit</button>
+            <hr>
+            Result:<p class ="summary"></ul></p>
+        </div>
+        <script>
+            var summary = document.querySelector('.summary');
+
+            document.getElementById('btn').onclick=function(){
+                var result="";
+                var name = parseInt(document.getElementById('name').value)/100;
+                var money = parseInt(document.getElementById('money').value);
+
+                if(money <=100){
+                    result = '十分感謝捐贈';
+                }
+                else if(100< money&&money<=250 ){
+                    result = '感謝乾爹支持我的計畫';
+                }
+                else {
+                    result = '我已經不知道可以打什麼表達感謝了；)';
+                }
+                summary.innerHTML = result;
+            }
+        </script>
+    </body>
+
+</html>
