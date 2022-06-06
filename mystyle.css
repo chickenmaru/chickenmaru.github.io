@@ -1,0 +1,65 @@
+#one {
+    background-color:rgb(220, 183, 255)
+}
+/* CSS格式1 */
+
+#one-print{
+    font-size: x-large; /* CSS類型2 */
+    color:white /* CSS類型3 */
+}
+
+#one:hover{
+    background-color:blueviolet
+}
+
+#two{
+    background-color: rgb(168, 168, 247);
+}
+
+#two:hover{
+    background-color: rgb(74, 74, 211);
+}
+
+#three{
+    background-color:rgb(255, 186, 186)
+}
+
+#three:hover{
+    background-color:rgb(230, 49, 49)
+}
+
+#title{
+    
+    font-size: xxx-large;
+}
+
+a{
+    color:white;
+    font-size:x-large;
+}
+
+img{
+    width: 400px; /* CSS類型4 */
+    height: 400px; /* CSS類型5 */
+}
+
+
+
+div.gallery:hover{
+    border:5px rgb(235, 133, 255); /* CSS類型6 */
+}
+
+div.gallery img{
+    width:100%;
+}
+    
+div.remarks{
+    padding:30prgb(103, 63, 111); /* CSS類型7 */
+    text-align:center; /* CSS類型8*/
+}
+
+
+
+
+
+
