@@ -1,5 +1,6 @@
 # chickenmaru.github.io
-* 這邊是我的CV首頁：[https://chickenmaru.github.io]
+# [這邊是我的CV首頁](https://chickenmaru.github.io)
+  * by 109403541 王偉倫
   * HTML標籤共有18個
   * CSS類別共有7個
   * 絕對路徑照片共一張，相對路徑共六張
